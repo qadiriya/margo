@@ -1,0 +1,35 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+
+html,body{font-family:Verdana,Arial,Helvetica,sans-serif;background-color:#f0f0f0}
+body{margin:0;}
+img{border:0;width:100%;height:auto}
+html{font-size:12px;}
+@media screen and (min-width:320px) {html{font-size:calc(9px + 0.5vw + 0.5vmax);} .bod{max-width:130vmin}}
+@media screen and (min-width:1100px) {html{font-size:20px;} .bod{max-width:1080px;}}
+
+div{font-size:1.2rem;}
+p{padding:0 0.7rem;font-size:1rem}
+a{color:#000000;text-decoration:none}
+header{position:relative;}
+hr{border-top:1px solid #cccccc}
+.bod{position:relative;margin:0 auto;width:100%;background-color:#ffffff}
+
+h1{position:absolute;top:25%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);white-space:nowrap;padding:0.5rem 2rem;border:1px solid #cccccc;letter-spacing:0.5rem;color:#f1f1f1;border-radius:4px;font-size:1.5rem;font-weight:normal}
+
+.bar{position:absolute;bottom:-0.9rem;left:50%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%);background-color:#f0f0f0;border-radius:4px;padding:0.3rem 0.7rem;white-space:nowrap}
+.but{padding:0.3rem}
+
+.card{position:relative;margin:1.5rem 0.4rem;border:1px solid #bfbfbf;border-radius:4px;background-color:#ffffff;box-shadow:3px 3px 5px #aaaaaa;}
+
+.icn{display:inline-block;width:2.5rem;height:2.5rem;max-width:64px;max-height:64px;margin:0 0 0 0.2rem}
+
+.upbtn{position:absolute;right:0;bottom:-1rem;font-size:1.2rem;padding:0 0.5rem;background-color:#ffffff;box-shadow:3px 3px 5px #aaaaaa;border-radius:4px}
+
+.foo{text-align:center;width:99%;padding:0.4rem 0;font-size:0.7rem;white-space:nowrap;background-color:#cccccc;background-image:linear-gradient(to right,#ffffff,10%,#bbbbbb,90%,#ffffff)}
+
+/* Slider */ #slider{ width:100%; height:100%; position:relative; overflow:hidden; } @keyframes load{ from{left:-100%;} to{left:0;} } .slides{ width:500%; height:100%; position:relative; -webkit-animation:slide 30s infinite; -moz-animation:slide 30s infinite; animation:slide 30s infinite; } .slider{ width:20%; height:100%; float:left; position:relative; z-index:1; overflow:hidden; }
+/* Contents */ .content-txt{color:#ffffff;margin-left:1rem;width:50%;max-width:450px;bottom:2rem;float:left;position:absolute; -webkit-animation:content-s 6s infinite; -moz-animation:content-s 6s infinite; animation:content-s 6s infinite; } 
+/* Switch */ .switch{width:120px; height:10px; position:absolute; bottom:2rem; z-index:99;} .switch > ul{ list-style:none; } .switch > ul > li{ width:10px; height:10px; border-radius:50%; background:#333; float:left; margin-right:5px; cursor:pointer; } .switch ul{ overflow:hidden; } .on{ width:100%; height:100%; border-radius:50%; background:#f39c12; position:relative; -webkit-animation:on 30s infinite; -moz-animation:on 30s infinite; animation:on 30s infinite; } 
+/* Animation */ @-webkit-keyframes slide{ 0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:-100%; } 36%{ margin-left:-100%; } 40%{ margin-left:-200%; } 56%{ margin-left:-200%; } 60%{ margin-left:-300%; } 76%{ margin-left:-300%; } 80%{ margin-left:-400%; } 96%{ margin-left:-400%;} } @-moz-keyframes slide{ 0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:-100%; } 36%{ margin-left:-100%; } 40%{ margin-left:-200%; } 56%{ margin-left:-200%; } 60%{ margin-left:-300%; } 76%{ margin-left:-300%; } 80%{ margin-left:-400%; } 96%{ margin-left:-400%;} } @keyframes slide{ 0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:-100%; } 36%{ margin-left:-100%; } 40%{ margin-left:-200%; } 56%{ margin-left:-200%; } 60%{ margin-left:-300%; } 76%{ margin-left:-300%; } 80%{ margin-left:-400%; } 96%{ margin-left:-400%; } }
+/* Contents */ @-webkit-keyframes content-s{ 0%{left:-500px;} 10%{left:20px;} 15%{left:0px;} 30%{left:0px;} 40%{left:0px;} 50%{left:0px;} 60%{left:0px;} 70%{left:0px;} 80%{left:-500px;} 90%{left:-500px;} 100%{left:-500px;} } @-moz-keyframes content-s{ 0%{left:-500px;} 10%{left:20px;} 15%{left:0px;} 30%{left:0px;} 40%{left:0px;} 50%{left:0px;} 60%{left:0px;} 70%{left:0px;} 80%{left:-500px;} 90%{left:-500px;} 100%{left:-500px;} } @keyframes content-s{ 0%,100%{left:-500px;} 15%{left:20px;} 25%{left:0px;} 30%{left:0px;} 40%{left:0px;} 50%{left:0px;} 60%{left:0px;} 70%{left:0px;} 89%{left:-500px;} 90%{left:-500px;} } }
+/* Switch */ @-webkit-keyframes on{0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:15px; } 36%{ margin-left:15px; } 40%{ margin-left:30px; } 56%{ margin-left:30px; } 60%{ margin-left:45px; } 76%{ margin-left:45px; } 80%{ margin-left:60px; } 96%{ margin-left:60px; } } @-moz-keyframes on{ 0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:15px; } 36%{ margin-left:15px; } 40%{ margin-left:30px; } 56%{ margin-left:30px; } 60%{ margin-left:45px; } 76%{ margin-left:45px; } 80%{ margin-left:60px; } 96%{ margin-left:60px; } } @keyframes on{ 0%,100%{ margin-left:0%; } 16%{ margin-left:0%; } 20%{ margin-left:15px; } 36%{ margin-left:15px; } 40%{ margin-left:30px; } 56%{ margin-left:30px; } 60%{ margin-left:45px; } 76%{ margin-left:45px; } 80%{ margin-left:60px; } 96%{ margin-left:60px; } }
